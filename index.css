@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.gogaga-logo {
+  width: 100px;
+  height: 70px;
+}
+.membership-icon {
+  height: 30px;
+  width: 30px;
+}
+.top-nav-container {
+  border: 2px solid #808080;
+  border-radius: 12px;
+}
+.i1 {
+  padding: 5px;
+}
+.i2 {
+  padding: 5px;
+}
+.gift {
+  height: 15px;
+  width: 15px;
+}
+
+.mid-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+#navItem1 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+
+#navItem2 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+
+#navItem3 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+
+#navItem4 {
+  color: #323f4b;
+  font-family: "Roboto";
+}
+
+.banner-section-bg-container {
+  background-image: url("https://res.cloudinary.com/djbgjk7ae/image/upload/v1723828364/a3_bhg0os.png");
+  height: 100vh;
+  background-size: cover;
+}
+
+.banner-heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: 300;
+}
+.nxt-head {
+  color: grey;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+
+.banner-caption {
+  color: #f5f7fa;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 300;
+}
+.nxt-para {
+  color: grey;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.custom-button {
+  color: white;
+  background-color: black;
+  width: 130px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.custom-outline-button {
+  color: black;
+  background-color: transparent;
+  width: 130px;
+  height: 45px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 8px;
+}
+
+.wcu-section {
+  background-color: #f9fbfe;
+  border-radius: 25px;
+  margin: 15px;
+}
+
+.wcu-section-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.wcu-section-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+
+.wcu-card {
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 16px;
+  width: 350px;
+  height: 120px;
+}
+
+.wcu-card1 {
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-width: 0px;
+  text-align: center;
+  border-color: grey;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.wcu-card2 {
+  background-color: grey;
+  color: black;
+  border-style: solid;
+  border-width: 0px;
+  text-align: center;
+  border-color: grey;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+.wcu-card-image {
+  width: 87px;
+  height: 90px;
+}
+
+.wcu-card-title {
+  color: grey;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.wcu-card-description {
+  color: black;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+
+.offers {
+  color: #323f4b;
+  font-style: italic;
+  font-weight: 600;
+}

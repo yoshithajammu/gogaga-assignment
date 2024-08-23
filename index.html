@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
       src="https://kit.fontawesome.com/ac42c3b1f7.js"
       crossorigin="anonymous"
@@ -34,130 +37,247 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://res.cloudinary.com/djbgjk7ae/image/upload/v1723826362/a1_oztxnw.png"
-            class="gogaga-logo"
-          />
-        </a>
+    <div class="sidenav">
+      <div class="logo">
+        <h1 class="logo-ditch ml-4">Ditch</h1>
+        <h1 class="logo-dollar ml-5">
+          Dollar<i class="fa-solid fa-registered size ml-1"></i>
+        </h1>
+      </div>
+      <div class="mb-5">
+        <a href="#about" class="dashboard"
+          ><i class="fa-brands fa-slack p-2"></i>Dashboard</a
+        >
+        <a href="#services" class="left-a"
+          ><i class="fa-solid fa-cube p-2"></i>CRM</a
+        >
+        <a href="#clients" class="left-a"
+          ><i class="fa-regular fa-cube p-2"></i>MAM</a
+        >
+        <a href="#contact" class="left-a"
+          ><i class="fa-solid fa-clock p-2"></i>PAMM</a
+        >
+        <a href="#contact" class="left-a"
+          ><i class="fa-solid fa-right-left p-2"></i>Trade</a
+        >
+        <a href="#contact" class="left-a"
+          ><i class="fa-solid fa-wallet p-2"></i>Wallet</a
+        >
+        <a href="#contact" class="left-a"
+          ><i class="fa-solid fa-circle-dollar-to-slot p-2"></i>Account</a
+        >
+        <a href="#contact" class="left-a"
+          ><i class="fa-solid fa-clock-rotate-left p-2"></i>History</a
+        >
+      </div>
+      <div class="mt-5">
+        <a href="#contact" class="left-a"
+          ><i class="fa-solid fa-bell p-2"></i>Notifications</a
+        >
+        <a href="#contact" class="left-a"
+          ><i class="fa-solid fa-gear p-2"></i>Settings</a
+        >
+        <a href="#contact" class="left-a"
+          ><i class="fa-solid fa-headphones p-2"></i>Help & Support</a
+        >
+        <a href="#contact" class="left-a"
+          ><i class="fa-solid fa-right-from-bracket p-2"></i>Logout</a
+        >
+        <hr />
+        <div class="d-flex flex-row">
+          <div class="dp mt-3">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="p-2">
+            <h1 class="dp-head">Shyam Shakur</h1>
+            <p class="dp-para">shayam01.shankur@m...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand ml-3" href="#">Dashboard</a>
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-link active">
-              Packages
-              <span class="sr-only">(current)</span>
-            </a>
-            <a class="nav-link">Tours</a>
-            <a class="nav-link">Help</a>
-            <a class="nav-link"
-              >Membership
-              <img
-                src="https://res.cloudinary.com/djbgjk7ae/image/upload/v1723826979/diamond_4886170_mfl9tx.png"
-                class="membership-icon"
-              />
-            </a>
-            <a class="nav-link"
-              >Gift cards <i class="fa-solid fa-gift gift"></i
-            ></a>
-            <a class="nav-link">
-              <div class="top-nav-container">
-                <i class="fa-solid fa-bars i1"></i
-                ><i class="fa-solid fa-user i2"></i>
-              </div>
-            </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2 search-bar"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <i class="fa-regular fa-bell bell"></i>
+          </form>
+        </div>
+      </nav>
+      <div class="d-flex flex-row">
+      <div class="d-flex flex-column">
+      <div class="quick-links-container ml-2">
+        <h1 class="quick-links-head">Quick Links</h1>
+        <div class="d-flex flex-row">
+          <div class="m-1 quick-container">
+            <i class="fa-solid fa-arrow-turn-down" style="color: #344054"></i>
+            <p class="quick-links-head1">Deposit</p>
+          </div>
+          <div class="quick-container m-1">
+            <i class="fa-solid fa-arrow-turn-up" style="color: #344054"></i>
+            <p class="quick-links-head1">Withdrawn</p>
+          </div>
+          <div class="quick-container m-1">
+            <i class="fa-solid fa-gear" style="color: #344054"></i>
+            <p class="quick-links-head1">Settings</p>
+          </div>
+          <div class="quick-container m-1">
+            <i class="fa-solid fa-user-check" style="color: #344054"></i>
+            <p class="quick-links-head1">Verification</p>
+          </div>
+          <div class="quick-container m-1">
+            <i class="fa-solid fa-star" style="color: #344054"></i>
+            <p class="quick-links-head1">Bonuses</p>
+          </div>
+          <div class="quick-container m-1">
+            <i class="fa-solid fa-chart-line" style="color: #344054"></i>
+            <p class="quick-links-head1">MT5</p>
+          </div>
+          <div class="quick-container m-1">
+            <i class="fa-solid fa-arrow-right-arrow-left" style="color: #344054"></i>
+            <p class="quick-links-head1">Transfer</p>
           </div>
         </div>
-      </div>
-    </nav>
-    <div
-      class="banner-section-bg-container d-flex justify-content-center flex-column"
-    >
-      <div class="text-left ml-3">
-        <h1 class="banner-heading mb-3">Discover Your Next Adventure</h1>
-        <p class="banner-caption mb-4">
-          Unlock your path to adventure, start your journey of discovery - where
-          every destination awaits your exploration
-        </p>
-        <div class="wcu-section pt-2 pb-2">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 m-2">
-                <button class="custom-button">Packages</button>
-                <button class="custom-outline-button">Tours</button>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="wcu-card p-3 mb-3">
-                  <p class="wcu-card-title mt-3">Destination</p>
-                  <h1 class="wcu-card-description">Enter the City</h1>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="wcu-card p-3 mb-3 d-flex justify-content-center flex-row"
-                >
-                  <div>
-                    <p class="wcu-card-title mt-3">Check-in</p>
-                    <p class="wcu-card-description mt-3">
-                      08/28/2024 <i class="fa-regular fa-calendar"></i>
-                    </p>
-                  </div>
-                  <div class="m-2">
-                    <i class="fa-solid fa-moon"></i>
-                    <p class="wcu-card-title mt-3">1Night</p>
-                  </div>
-                  <div class="m-2">
-                    <p class="wcu-card-title mt-3">Check-out</p>
-                    <p class="wcu-card-description mt-3">
-                      mm/dd/yyyy <i class="fa-regular fa-calendar"></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="wcu-card p-3 mb-3 d-flex flex-row">
-                  <div>
-                    <p class="wcu-card-title mt-3">Guests and Rooms</p>
-                    <h1 class="wcu-card-description">
-                      2 adults, 0 childern, 1 room
-                    </h1>
-                  </div>
-                  <div class="mt-3 ml-5">
-                    <i class="fa-solid fa-sort-down"></i>
-                  </div>
-                </div>
-
-                <div class="wcu-card1">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-              </div>
-              <div class="d-flex flex-row">
-                <h1 class="wcu-card-description ml-3">Star Rating</h1>
-                <div class="wcu-card1 d-flex flex-row m-2">
-                  3<i class="fa-regular fa-star"></i>
-                </div>
-                <div class="wcu-card1 d-flex flex-row m-2">
-                  4<i class="fa-regular fa-star"></i>
-                </div>
-                <div class="wcu-card2 d-flex flex-row m-2">
-                  5<i class="fa-regular fa-star"></i>
-                </div>
-              </div>
-            </div>
+        <div class="d-flex flex-row">
+          <div class="m-1 quick-container">
+            <i class="fa-solid fa-clock-rotate-left" style="color: #344054"></i>
+            <p class="quick-links-head1">History</p>
           </div>
-        </div>
+          <div class="quick-container m-1">
+            <i class="fa-solid fa-user" style="color: #344054"></i>            
+            <p class="quick-links-head1">Partner</p>
+          </div>
+          <div class="quick-container m-1">
+            <i class="fa-solid fa-repeat" style="color: #344054"></i>
+            <p class="quick-links-head1">Exchange</p>
+          </div>
+          <div class="quick-container m-1">
+           <i class="fa-solid fa-chart-simple" style="color: #344054"></i>
+            <p class="quick-links-head1">Analytics</p>
+          </div>
       </div>
     </div>
+       <div class="bar-chart-container m-4">
+           <div class="title-container">
+               <p class="quick-links-head1 m-3">Overview</p>
+               <div class="d-flex flex-row text-center">
+                   <i class="fa-solid fa-download mt-1" style="color:#ad8edd"></i>
+                   <p class="quick-links-head m-3">Download Report</p>
+               </div>
+           </div>
+           <div class="tabs">
+            <button class="tab">Monthly</button>
+            <button class="tab active">Yearly</button>
+        </div>
+           <canvas id="myChart"></canvas>
+           <script>
+var xValues = ["Jan", "Feb", "Mar", "Apr", "May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
+var yValues = [750, 300, 1000,1200,500,700,250,1500,400,500,100,250];
+var barColors = ["#ad8edd","#ad8edd","#ad8edd","#ad8edd","#ad8edd","#ad8edd","#ad8edd","#ad8edd","#ad8edd","#ad8edd","#ad8edd","#ad8edd"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+    }
+  }
+});
+           </script>
+       </div> 
+      </div>
+
+      <div class="d-flex flex-column">
+          <div class="trading-container">
+              <h1 class="quick-links-head">Trading Accounts</h1>
+              <div class="master-container">
+                   <p class="quick-links-head1 m-3">Master Accounts</p>
+                   <div class="d-flex flex-row ml-3">
+                        <button class="tab">cTrader</button>
+                        <p class="quick-links-head1 m-3">#273728</p>
+                   </div>
+                   <div class="content-container ml-3 mr-3">
+                        <h1 class="quick-links-head">0.00 USD</h1>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+              </div>
+              <div class="master-container">
+                   <p class="quick-links-head1 m-3">Master Accounts</p>
+                   <div class="d-flex flex-row ml-3">
+                        <button class="tab">cTrader</button>
+                        <p class="quick-links-head1 m-3">#273728</p>
+                   </div>
+                   <div class="content-container ml-3 mr-3">
+                        <h1 class="quick-links-head">0.00 USD</h1>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+              </div>
+          </div>
+          <div class="trading-container">
+              <h1 class="quick-links-head">Open Trades</h1>
+              <div class="trade-container">
+                   <div class="d-flex flex-row ml-3">
+                        <p class="quick-links-head1 m-3">GBPUSD</p>
+                        <button class="tab-long text-center">Long</button>
+                        <div>
+                        <p class="quick-links-head1 m-3">0.12</p>
+                        </div>
+                   </div>
+                    <h1 class="quick-links-head2 ml-4">+56.00 USD</h1>
+                   </div>
+                     <div class="trade-container">
+                   <div class="d-flex flex-row ml-3 text-center">
+                        <p class="quick-links-head1 m-3">USDJPY</p>
+                        <button class="tab-long">Long</button>
+                        <div>
+                        <p class="quick-links-head1 m-3">0.52</p>
+                        </div>
+                   </div>
+                    <h1 class="quick-links-head2 ml-4">-0.09 USD</h1>
+                   </div>
+                   <div class="trade-container">
+                   <div class="d-flex flex-row ml-3">
+                        <p class="quick-links-head1 m-3">EURUSD</p>
+                        <button class="tab-short">Short</button>
+                        <div>
+                        <p class="quick-links-head1 m-3">0.34</p>
+                        </div>
+                   </div>
+                    <h1 class="quick-links-head3 ml-4"> -1.09 USD</h1>
+                   </div>  
+              
+          </div>
+
+      </div>
+
+      </div>
   </body>
 </html>
+
+
